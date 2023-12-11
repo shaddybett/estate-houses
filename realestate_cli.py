@@ -14,8 +14,8 @@ def search_vacant_houses(location, bedrooms, price_range):
         query += " AND bedrooms = ?"
         parameters.append(bedrooms)
 
-#     if price_range is not None:
-#         query += " AND price >= ? AND price <= ?"
+    if price_range is not None:
+        query += " AND price >= ? AND price <= ?"
 #         min_price, max_price = map(float, price_range.split('-'))
 #         parameters.extend([min_price, max_price])
 
