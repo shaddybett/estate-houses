@@ -21,10 +21,10 @@ def setup_database():
     cursor.executemany('''
 #         INSERT INTO houses (location, bedrooms, price) VALUES (?, ?, ?)
 #     ''', [
-#         ('Kayole', 2, 6000),
-#         ('Kibera', 1, 1500),
-#         ('Mathare',2, 2500),
-#     ])
+        ('Kayole', 2, 6000),
+        ('Kibera', 1, 1500),
+        ('Mathare',2, 2500),
+    ])
 
 #     # Commit changes and close the connection
 #     conn.commit()
