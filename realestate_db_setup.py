@@ -18,7 +18,7 @@ def setup_database():
 #     ''')
 
     # Insert some sample data
-#     cursor.executemany('''
+    cursor.executemany('''
 #         INSERT INTO houses (location, bedrooms, price) VALUES (?, ?, ?)
 #     ''', [
 #         ('Kayole', 2, 6000),
