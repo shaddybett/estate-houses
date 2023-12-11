@@ -34,3 +34,9 @@ def search_vacant_houses(location, bedrooms, price_range):
 def main():
     # Create an ArgumentParser object
     parser = argparse.ArgumentParser(description="Search for vacant houses in a town.")
+
+
+    # Define command-line arguments
+    parser.add_argument("location", help="The town or location to search in")
+    parser.add_argument("--bedrooms", type=int, default=None, help="Number of bedrooms (optional)")
+    parser.add_argument("--price-range", help="Price range (optional)")
