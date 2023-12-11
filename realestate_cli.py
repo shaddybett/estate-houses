@@ -6,7 +6,7 @@ def search_vacant_houses(location, bedrooms, price_range):
     conn = sqlite3.connect("realestate.db")
     cursor = conn.cursor()
 
-#     # Build the SQL query based on the provided criteria
+     # Build the SQL query based on the provided criteria
     query = "SELECT * FROM houses WHERE location = ?"
     parameters = [location]
 
@@ -19,15 +19,15 @@ def search_vacant_houses(location, bedrooms, price_range):
         min_price, max_price = map(float, price_range.split('-'))
         parameters.extend([min_price, max_price])
 
-#     # Execute the query
+     # Execute the query
     cursor.execute(query, parameters)
 
-#     # Fetch and print the results
+     # Fetch and print the results
     results = cursor.fetchall()
     for row in results:
         print(f"House ID: {row[0]}, Location: {row[1]}, Bedrooms: {row[2]}, Price: {row[3]}")
 
-#     # Close the connection
+     # Close the connection
     conn.close()
 
 
