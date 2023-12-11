@@ -21,9 +21,9 @@ def setup_database():
     cursor.executemany('''
         INSERT INTO houses (location, bedrooms, price) VALUES (?, ?, ?)
     ''', [
-        ('Kariobangi', 2, 6000),
-        ('Taifa', 1, 1500),
-        ('Ngong',2, 2500),
+        ('Eastlands', 4, 80000),
+        ('Kabete', 3, 1500),
+        ('Parklands', 4, 200000),
     ])
 
     # Commit changes and close the connection
