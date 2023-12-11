@@ -8,7 +8,7 @@ def setup_database():
     cursor = conn.cursor()
 
      # Create a table to store house information
-#    cursor.execute('''
+    cursor.execute('''
 #         CREATE TABLE IF NOT EXISTS houses (
 #             id INTEGER PRIMARY KEY,
 #             location TEXT NOT NULL,
