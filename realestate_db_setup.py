@@ -10,10 +10,10 @@ def setup_database():
      # Create a table to store house information
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS houses (
-#             id INTEGER PRIMARY KEY,
-#             location TEXT NOT NULL,
-#             bedrooms INTEGER,
-#             price REAL
+            id INTEGER PRIMARY KEY,
+            location TEXT NOT NULL,
+            bedrooms INTEGER,
+            price REAL
 #         )
 #     ''')
 
