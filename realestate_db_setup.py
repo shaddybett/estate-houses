@@ -28,7 +28,7 @@ def setup_database():
 
     # Commit changes and close the connection
     conn.commit()
-#     conn.close()
+    conn.close()
 
 # if _name_ == "_main_":
 #     setup_database()
