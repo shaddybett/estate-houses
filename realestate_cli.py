@@ -20,7 +20,7 @@ def search_vacant_houses(location, bedrooms, price_range):
         parameters.extend([min_price, max_price])
 
 #     # Execute the query
-#     cursor.execute(query, parameters)
+    cursor.execute(query, parameters)
 
 #     # Fetch and print the results
 #     results = cursor.fetchall()
