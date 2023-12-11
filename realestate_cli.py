@@ -29,3 +29,8 @@ def search_vacant_houses(location, bedrooms, price_range):
 
 #     # Close the connection
     conn.close()
+
+
+def main():
+    # Create an ArgumentParser object
+    parser = argparse.ArgumentParser(description="Search for vacant houses in a town.")
