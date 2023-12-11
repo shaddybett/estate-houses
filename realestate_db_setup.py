@@ -1,6 +1,6 @@
 import sqlite3
 
-# def setup_database():
+def setup_database():
 #     # Connect to or create the SQLite database file
 #     conn = sqlite3.connect("realestate.db")
 
