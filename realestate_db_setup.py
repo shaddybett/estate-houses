@@ -14,8 +14,8 @@ def setup_database():
             location TEXT NOT NULL,
             bedrooms INTEGER,
             price REAL
-#         )
-#     ''')
+         )
+    ''')
 
 #     # Insert some sample data
 #     cursor.executemany('''
