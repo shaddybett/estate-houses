@@ -2,30 +2,30 @@ import argparse
 import sqlite3
 
 def search_vacant_houses(location, bedrooms, price_range):
-    # Connect to the SQLite database
-    conn = sqlite3.connect("realestate.db")
-    cursor = conn.cursor()
 
-    # Build the SQL query based on the provided criteria
-    query = "SELECT * FROM houses WHERE location = ?"
-    parameters = [location]
+#     conn = sqlite3.connect("realestate.db")
+#     cursor = conn.cursor()
 
-    if bedrooms is not None:
-        query += " AND bedrooms = ?"
-        parameters.append(bedrooms)
+#     # Build the SQL query based on the provided criteria
+#     query = "SELECT * FROM houses WHERE location = ?"
+#     parameters = [location]
 
-    if price_range is not None:
-        query += " AND price >= ? AND price <= ?"
-        min_price, max_price = map(float, price_range.split('-'))
-        parameters.extend([min_price, max_price])
+#     if bedrooms is not None:
+#         query += " AND bedrooms = ?"
+#         parameters.append(bedrooms)
 
-    # Execute the query
-    cursor.execute(query, parameters)
+#     if price_range is not None:
+#         query += " AND price >= ? AND price <= ?"
+#         min_price, max_price = map(float, price_range.split('-'))
+#         parameters.extend([min_price, max_price])
 
-    # Fetch and print the results
-    results = cursor.fetchall()
-    for row in results:
-        print(f"House ID: {row[0]}, Location: {row[1]}, Bedrooms: {row[2]}, Price: {row[3]}")
+#     # Execute the query
+#     cursor.execute(query, parameters)
 
-    # Close the connection
-    conn.close()
+#     # Fetch and print the results
+#     results = cursor.fetchall()
+#     for row in results:
+#         print(f"House ID: {row[0]}, Location: {row[1]}, Bedrooms: {row[2]}, Price: {row[3]}")
+
+#     # Close the connection
+#     conn.close()
