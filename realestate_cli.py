@@ -4,7 +4,7 @@ import sqlite3
 def search_vacant_houses(location, bedrooms, price_range):
 
     conn = sqlite3.connect("realestate.db")
-#     cursor = conn.cursor()
+    cursor = conn.cursor()
 
 #     # Build the SQL query based on the provided criteria
 #     query = "SELECT * FROM houses WHERE location = ?"
