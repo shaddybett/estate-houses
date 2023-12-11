@@ -8,7 +8,7 @@ def search_vacant_houses(location, bedrooms, price_range):
 
 #     # Build the SQL query based on the provided criteria
     query = "SELECT * FROM houses WHERE location = ?"
-#     parameters = [location]
+    parameters = [location]
 
 #     if bedrooms is not None:
 #         query += " AND bedrooms = ?"
