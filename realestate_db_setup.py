@@ -1,14 +1,14 @@
-# import sqlite3
+import sqlite3
 
-# def setup_database():
-#     # Connect to or create the SQLite database file
-#     conn = sqlite3.connect("realestate.db")
+def setup_database():
+    # Connect to or create the SQLite database file
+    conn = sqlite3.connect("realestate.db")
 
-#     # Create a cursor object to execute SQL commands
-#     cursor = conn.cursor()
+    # Create a cursor object to execute SQL commands
+    cursor = conn.cursor()
 
-    # Create a table to store house information
-    cursor.execute('''
+     # Create a table to store house information
+#    cursor.execute('''
 #         CREATE TABLE IF NOT EXISTS houses (
 #             id INTEGER PRIMARY KEY,
 #             location TEXT NOT NULL,
