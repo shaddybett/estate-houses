@@ -11,8 +11,8 @@ def search_vacant_houses(location, bedrooms, price_range):
     parameters = [location]
 
     if bedrooms is not None:
-#         query += " AND bedrooms = ?"
-#         parameters.append(bedrooms)
+        query += " AND bedrooms = ?"
+        parameters.append(bedrooms)
 
 #     if price_range is not None:
 #         query += " AND price >= ? AND price <= ?"
