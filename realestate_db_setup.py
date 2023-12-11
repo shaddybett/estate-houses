@@ -26,8 +26,8 @@ def setup_database():
 #         ('Mathare',2, 2500),
 #     ])
 
-#     # Commit changes and close the connection
-#     conn.commit()
+    # Commit changes and close the connection
+    conn.commit()
 #     conn.close()
 
 # if _name_ == "_main_":
