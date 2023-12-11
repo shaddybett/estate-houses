@@ -28,4 +28,4 @@ def search_vacant_houses(location, bedrooms, price_range):
         print(f"House ID: {row[0]}, Location: {row[1]}, Bedrooms: {row[2]}, Price: {row[3]}")
 
 #     # Close the connection
-#     conn.close()
+    conn.close()
