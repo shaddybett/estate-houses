@@ -40,3 +40,10 @@ def main():
     parser.add_argument("location", help="The town or location to search in")
     parser.add_argument("--bedrooms", type=int, default=None, help="Number of bedrooms (optional)")
     parser.add_argument("--price-range", help="Price range (optional)")
+
+      # Parse the command-line arguments
+    args = parser.parse_args()
+
+        # Call the search function with the provided arguments
+    search_vacant_houses(args.location, args.bedrooms, args.price_range)
+
