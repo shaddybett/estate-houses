@@ -23,7 +23,7 @@ def search_vacant_houses(location, bedrooms, price_range):
     cursor.execute(query, parameters)
 
 #     # Fetch and print the results
-#     results = cursor.fetchall()
+    results = cursor.fetchall()
 #     for row in results:
 #         print(f"House ID: {row[0]}, Location: {row[1]}, Bedrooms: {row[2]}, Price: {row[3]}")
 
