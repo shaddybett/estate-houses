@@ -47,3 +47,5 @@ def main():
         # Call the search function with the provided arguments
     search_vacant_houses(args.location, args.bedrooms, args.price_range)
 
+if __name__ == "__main__":
+    main()
