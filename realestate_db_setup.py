@@ -5,7 +5,7 @@ def setup_database():
     conn = sqlite3.connect("realestate.db")
 
     # Create a cursor object to execute SQL commands
-#     cursor = conn.cursor()
+    cursor = conn.cursor()
 
 #     # Create a table to store house information
 #     cursor.execute('''
