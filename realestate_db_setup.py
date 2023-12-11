@@ -17,18 +17,18 @@ def setup_database():
          )
     ''')
 
-#     # Insert some sample data
-#     cursor.executemany('''
+    # Insert some sample data
+    cursor.executemany('''
 #         INSERT INTO houses (location, bedrooms, price) VALUES (?, ?, ?)
 #     ''', [
-#         ('Kayole', 2, 6000),
-#         ('Kibera', 1, 1500),
-#         ('Mathare',2, 2500),
-#     ])
+        ('Kayole', 2, 6000),
+        ('Kibera', 1, 1500),
+        ('Mathare',2, 2500),
+    ])
 
 #     # Commit changes and close the connection
 #     conn.commit()
 #     conn.close()
 
-# if _name_ == "_main_":
-#     setup_database()
+if _name_ == "_main_":
+    setup_database()
